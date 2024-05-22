@@ -1,5 +1,7 @@
 package day27_wrapper_arraylist;
 
+import java.util.Arrays;
+
 public class YahooSearch {
     public static void main(String[] args) {
         // About 7,080,000 search results
@@ -29,7 +31,19 @@ public class YahooSearch {
         // Todo: About 16,820,000,000 results (0.54 seconds)
         // Make sure the time is between 0 and 2 seconds
 
+      String result1 ="About 16,820,000,000 results (0.54 seconds)";
+      String [] arr1 = result1.split(" ");
+        System.out.println(Arrays.toString(arr1));
+      String str1 = arr1[3].substring(1);
+      double seconds = Double.parseDouble(str1);
 
+      if (seconds<=2){
+          System.out.println("TEST CASE PASSED - POSITIVE TEST CASE");
+      }else {
+          System.out.println("TEST CASE FAILED");
+      }
+
+        System.out.println("After searching for \"Apartments\" " + "I see  results "+seconds+" seconds");
 
 
     }
