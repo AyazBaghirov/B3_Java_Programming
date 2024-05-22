@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class ArrayUtil {
 
+
     /**
      * This method returns the min number from array using sorted method
      * @param arr is the paramter that accepts array
@@ -105,12 +106,7 @@ public class ArrayUtil {
     }
 
 
-    /**
-     * This method returns new int array with combined element from two int arrays
-     * @param arr1 is an array where we will add an element to the beginning
-     * @param arr2 is an array where we will add an element to the end
-     * @return new array with combined elements
-     */
+    //TODO: create a reusable method that take 2 int array and return one array combined
     public static int [] addElemInArr (int [] arr1, int [] arr2) { // [0, 1, 1, 2, 3] - [4, 5]
 
         int [] newArr = Arrays.copyOf(arr1, arr1.length+arr2.length); // [0, 1, 1, 2, 3, _, _]
@@ -122,8 +118,6 @@ public class ArrayUtil {
         return newArr;
     }
 
-
-    //TODO: create a reusable method that take 2 String array and return one array combined
 
 
 
