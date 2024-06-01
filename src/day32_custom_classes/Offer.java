@@ -11,8 +11,8 @@ public class Offer {
 
     String location;
     String company;
-    double salary;
-    boolean isFullTime;
+    public double salary;
+    public boolean isFullTime;
     int numberOfPTO;
 
 
@@ -31,10 +31,11 @@ public Offer(String company, String location, double salary){
     this.salary =salary;
 
 }// OVERLOADED CONSTRUCTOR
-    public Offer(String company, String location, double salary, int numberOfPTO){
+    public Offer(String company, String location, double salary, boolean isFullTime, int numberOfPTO){
         this.company =company;
         this.location = location;
         this.salary =salary;
+        this.isFullTime =isFullTime;
         this.numberOfPTO =numberOfPTO;
     }
 
