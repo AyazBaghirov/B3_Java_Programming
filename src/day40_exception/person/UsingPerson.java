@@ -5,7 +5,7 @@ public class UsingPerson {
 
         Person obj = new Person();
 
-        obj.setName("");
+        //obj.setName("");
 
         try {
             obj.setName("");
@@ -23,8 +23,8 @@ public class UsingPerson {
         try {
             obj.setAge(130);
         }catch (RuntimeException e){
-//            System.out.println(e.getMessage());
-            e.printStackTrace();
+            System.out.println(e.getMessage());
+            //e.printStackTrace();
         }
         System.out.println("Bye");
 
