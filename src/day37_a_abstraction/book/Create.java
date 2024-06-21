@@ -1,6 +1,7 @@
 package day37_a_abstraction.book;
 
 public interface Create {
+
     // if something is final, it has to be given value
     // variables in interaces are "static final" - constants
     String NAME = "Test";// public static final String NAME = "Test";
